@@ -1,3 +1,88 @@
 // Place all the styles related to the Categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main{
+	width:960px;
+	height:960px;
+	padding-top:60px;
+	background-color:white;
+	box-shadow:0px 0px 1px #999
+}
+
+#username{
+	color:#c0c0c0;
+	font-size:32px;
+	font-family: vera-sans, serif;
+	margin-bottom:60px;
+}
+
+#add-a-category{
+	width:100%;
+	font-size:32px;
+	color:#C0C0C0 !important;
+	border-bottom:solid 5px #00C8F8;
+	height:60px;
+	margin-bottom:60px;
+	outline: none !important;
+	box-shadow:none !important;
+	border-radius: 0px !important;
+	outline: none !important;
+	border-left:none;
+	border-top:none;
+	border-right:none;
+}
+
+.add-category-form{
+	float:left;
+	width:90%;
+}
+
+#add-a-category::-webkit-input-placeholder {
+	color: #C0C0C0;
+	padding-top:8px;
+}
+
+#add-a-category:-moz-placeholder { /* Firefox 18- */
+    color: #C0C0C0;
+	padding-top:8px;
+}
+
+#add-a-category::-moz-placeholder {  /* Firefox 19+ */
+    color: #C0C0C0;
+	padding-top:8px;
+}
+
+#add-a-category:-ms-input-placeholder {  
+    color: #C0C0C0; 
+	padding-top:8px;
+}
+
+.icon-pencil{
+	margin-top:15px;
+	float:left;
+	font-size:34px;
+}
+
+#category-loop{
+	background-color:#c0c0c0;
+	color:white;
+	font-size:32px;
+	font-family: vera-sans, serif;
+	padding:20px;
+	float:left;
+	border-radius:5px;
+	margin:10px;
+	cursor: pointer;
+}
+
+#category-loop:hover{
+	background-color:#00C8F8;
+	color:white;
+	font-size:32px;
+	font-family: vera-sans, serif;
+	padding:20px;
+	float:left;
+	border-radius:5px;
+	cursor: pointer;
+}

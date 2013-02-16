@@ -1,5 +1,5 @@
-<%= form_for(@category) do |f| %>
-  <% if @category.errors.any? %>
+<%= form_for Category.new do |f| %>
+  <% if Category.new.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@category.errors.count, "error") %> prohibited this category from being saved:</h2>
 
@@ -12,6 +12,6 @@
   <% end %>
 
   <div class="actions">
-    <%= f.submit %>
+	<%= f.text_field :name, :id => "add-a-category", :placeholder =>"Add a category"%>
   </div>
 <% end %>
