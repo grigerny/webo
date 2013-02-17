@@ -1,8 +1,7 @@
 Webo::Application.routes.draw do
-  resources :subcategories
-
-
-  resources :categories
+  resources :categories do
+      resources :subcategories
+  end
 
 
   # The priority is based upon order of creation:
