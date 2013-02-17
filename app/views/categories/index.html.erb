@@ -30,9 +30,9 @@
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="span10 offset1">
-			 <% @categories.each do |cat| %>
+			 <% @categories.sort { |a,b| a.name <=> b.name }.each do |cat| %>
 				<div id="category-loop">
-			 		<%= cat.name %>	
+			 		<%= cat.name.downcase %>	
 				</div>
 			 <% end %>
 			</div>	
