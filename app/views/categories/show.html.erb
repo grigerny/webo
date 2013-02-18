@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 <div class="container">
+	
 	<div class="main">
 	<div class="row-fluid">
 		<div class="span12">
@@ -39,8 +40,28 @@
 			</div>
 		</div>	
 	</div>	
+
+
+	<%= form_for([@category, @category.links.build]) do |f| %>
+	  <div class="field">
+	    <%= f.label :name %> <%= f.text_field :name %>
+	  </div>
+
+	  <div class="actions">
+	    <%= f.submit %>
+	  </div>
+	<% end %>
+	
+<div class="row-fluid">
+	<div class="span10 offset1">
+		<div id="linkwrapper">
+			<% @category.links.each do |link| %>
+			<%= link.name %>
+			<% end %>
+		</div>
+	</div>
+</div>			
+
 </div>
-
-
 <%= link_to 'Back', categories_path %>
 

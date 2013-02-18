@@ -1,3 +1,4 @@
 class Link < ActiveRecord::Base
-  # attr_accessible :title, :body
+  belongs_to :category
+  attr_accessible :name, :category_id
 end
