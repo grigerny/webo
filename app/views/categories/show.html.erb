@@ -4,8 +4,12 @@
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="span3 offset1">
-				<div id="username">
-				Gary Riger
+				<div id="user_pic">
+					<% if user_signed_in? %>
+					<%= link_to edit_user_registration_path do %>		
+					<%= gravatar_for "#{current_user.email}", :size => 120 %> 
+					<% end %>
+					<% end %>
 			</div>
 		</div>
 	</div>

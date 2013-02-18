@@ -3,9 +3,13 @@
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="span3 offset1">
-				<div id="username">
-				Gary Riger
-			</div>
+				<div id="user_pic">
+			<% if user_signed_in? %>
+			<%= link_to edit_user_registration_path do %>		
+			<%= gravatar_for "#{current_user.email}", :size => 120 %> 
+			<% end %>
+			<% end %>
+				</div>
 		</div>
 	</div>
 	<div class="row-fluid">
@@ -24,6 +28,7 @@
 		<div class="span12">
 			<div class="span10 offset1">
 				<div class="category-loop-ajax">
+					<div class="category-wrapper">
 			 		<% @categories.sort { |a,b| a.name <=> b.name }.each do |cat| %>
 						<div id="category-loop">
 			 			<%= link_to category_path(cat), :id => "category-loop-link" do %>
@@ -31,6 +36,7 @@
 							<% end %>
 						</div>
 			 			<% end %>
+					</div>
 				</div>
 			</div>	
 		</div>	
