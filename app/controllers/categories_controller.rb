@@ -16,7 +16,6 @@ class CategoriesController < ApplicationController
   # GET /categories/1.json
   def show
     @category = Category.find(params[:id])
-    @subcategory = @category.subcategories
     
     respond_to do |format|
       format.html # show.html.erb
@@ -28,7 +27,6 @@ class CategoriesController < ApplicationController
   # GET /categories/new.json
   def new
     @category = Category.new
-    @category.subcategories.build
     
     respond_to do |format|
       format.html # new.html.erb
