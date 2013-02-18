@@ -37,6 +37,7 @@
 .add-category-form{
 	float:left;
 	width:90%;
+	margin-left:10px;
 	
 }
 
@@ -58,6 +59,32 @@
 #add-a-category:-ms-input-placeholder {  
     color: #C0C0C0; 
 	padding-top:8px;
+}
+
+.search-category-form{
+	float:left;
+	width:90%;	
+	margin-left:10px;
+}
+
+#search-category{
+	width:100%;
+	font-size:32px;
+	color:#C0C0C0 !important;
+	font-family: vera-sans, serif;
+	border:solid 5px #00C8F8;
+	height:60px;
+	margin-bottom:60px;
+	outline: none !important;
+	box-shadow:none !important;
+	border-radius: 0px !important;
+	outline: none !important;
+}
+
+.icon-search{
+	margin-top:15px;
+	float:left;
+	font-size:34px;
 }
 
 .icon-pencil{

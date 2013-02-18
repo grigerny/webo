@@ -29,6 +29,7 @@ gem 'jquery-rails'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem "less-rails"
 gem 'libv8', '~> 3.11.8'
+gem "ransack"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
