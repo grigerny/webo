@@ -1,0 +1,8 @@
+<div class="categorywrapper">
+	<% @category.subcategories.sort { |a,b| a.name <=> b.name }.each do |sub| %>
+		<div id="category-loop">
+		<%= sub.name %>	
+		</div>
+		<% end %>
+</div>
+<%= link_to 'Back', categories_path %>

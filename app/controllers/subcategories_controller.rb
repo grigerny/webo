@@ -2,7 +2,7 @@ class SubcategoriesController < ApplicationController
   # GET /subcategories
   # GET /subcategories.json
   def index
-    @subcategories = Subcategory.all
+    @subcategories = @category.subcategories.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,11 +13,11 @@ class SubcategoriesController < ApplicationController
   # GET /subcategories/1
   # GET /subcategories/1.json
   def show
-    @subcategory = Subcategory.find(params[:id])
+    @subcategory = @category.subcategories.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @subcategory }
+      format.js
     end
   end
 
