@@ -1,7 +1,0 @@
-<%= form_for @category.subcategories.new do |f| %>
-
-  <div class="actions">
-		<%= f.hidden_field :category_id, :value => 16 %>
-    	<%= f.text_field :name, :id => "add-a-category", :placeholder => "Add a subcategory" %>
-  </div>
-<% end %>
