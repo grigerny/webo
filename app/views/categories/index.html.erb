@@ -6,7 +6,7 @@
 				<div id="user_pic">
 			<% if user_signed_in? %>
 			<%= link_to edit_user_registration_path do %>		
-			<%= gravatar_for "#{current_user.email}", :size => 120 %> 
+			<%= gravatar_for "#{current_user.email}", :size => 80 %> 
 			<% end %>
 			<% end %>
 				</div>

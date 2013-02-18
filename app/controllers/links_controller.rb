@@ -41,7 +41,8 @@ class LinksController < ApplicationController
   # POST /links.json
   def create
       @category = Category.find(params[:category_id])
-      @link = @category.links.create(params[:link])
+      @link = @category.links.build(params[:link])
+      @link.user_id = current_user.id
 
     respond_to do |format|
       if @link.save

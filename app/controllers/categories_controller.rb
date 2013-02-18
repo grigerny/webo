@@ -18,6 +18,7 @@ class CategoriesController < ApplicationController
     @q = Category.search(params[:q])
     @categories = @q.result(:distinct => true)
     
+    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @category }

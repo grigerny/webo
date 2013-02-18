@@ -8,7 +8,7 @@
 				<div id="user_pic">
 					<% if user_signed_in? %>
 					<%= link_to edit_user_registration_path do %>		
-					<%= gravatar_for "#{current_user.email}", :size => 120 %> 
+					<%= gravatar_for "#{current_user.email}", :size => 80 %> 
 					<% end %>
 					<% end %>
 			</div>
@@ -30,32 +30,28 @@
 			<div class="span10 offset1">
 				<div id="category-title">
 			 	<%= @category.name %>
-				</div>	
-			</div>	
+				</div>
+				<div id="add-link-form-wrapper">
+				<%= form_for([@category, @category.links.build]) do |f| %>
+				<%= f.text_field :name, :class => "add-link-form" %>
+				<% end %>
+				</div>
+			</div>		
 		</div>	
 	</div>
+	
 	<div class="row-fluid">
 		<div class="span10 offset1">
 			<div id="title-bar">
 			</div>
 		</div>	
 	</div>	
-
-
-	<%= form_for([@category, @category.links.build]) do |f| %>
-	  <div class="field">
-	    <%= f.label :name %> <%= f.text_field :name %>
-	  </div>
-
-	  <div class="actions">
-	    <%= f.submit %>
-	  </div>
-	<% end %>
 	
 <div class="row-fluid">
 	<div class="span10 offset1">
 		<div id="linkwrapper">
 			<% @category.links.each do |link| %>
+			<%= gravatar_for link.user.email, :size => 48 if link.user %>
 			<%= link.name %>
 			<% end %>
 		</div>
