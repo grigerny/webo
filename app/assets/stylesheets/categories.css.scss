@@ -133,3 +133,23 @@ a#category-loop-link:visited{
 	text-decoration:none;
 }
 
+#category-title{
+	background-color:#00C8F8;
+	color:white;
+	font-size:32px;
+	font-family: vera-sans, serif;
+	padding:20px;
+	float:left;
+	border-radius:5px;
+	margin:10px;
+	cursor: pointer;
+}
+
+
+#title-bar{
+	margin-left:10px;
+	width:95%;
+	height:2px;
+	background-color:#00C8F8;
+}
+
