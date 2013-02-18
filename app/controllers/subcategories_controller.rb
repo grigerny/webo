@@ -13,11 +13,11 @@ class SubcategoriesController < ApplicationController
   # GET /subcategories/1
   # GET /subcategories/1.json
   def show
-    @subcategory = @category.subcategories.find(params[:id])
-
+    @subcategory = Subcategory.find(params[:id])
+    
     respond_to do |format|
       format.html # show.html.erb
-      format.js
+      format.json { render json: @subcategory }
     end
   end
 

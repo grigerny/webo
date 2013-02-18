@@ -2,6 +2,7 @@ class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.json
   def index
+    
     @q = Category.search(params[:q])
     @categories = @q.result(:distinct => true)
 
@@ -15,6 +16,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1.json
   def show
     @category = Category.find(params[:id])
+  
 
     respond_to do |format|
       format.html # show.html.erb
