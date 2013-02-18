@@ -30,10 +30,13 @@
 			<div class="span10 offset1">
 				<div id="category-title">
 			 	<%= @category.name %>
-				</div>
+				</div>	
 				<div id="add-link-form-wrapper">
+				<% if user_signed_in? %>	
+				<i class="icon-plus"></i>	
 				<%= form_for([@category, @category.links.build]) do |f| %>
 				<%= f.text_field :name, :class => "add-link-form" %>
+				<% end %>
 				<% end %>
 				</div>
 			</div>		
