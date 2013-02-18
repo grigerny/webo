@@ -1,16 +1,5 @@
 <p id="notice"><%= notice %></p>
-<div class="row-fluid">
-	<div class="span12">
-		<div class="span10 offset1">
-			<div class="categorywrapper">
-		 	<% @category.subcategories.sort { |a,b| a.name <=> b.name }.each do |sub| %>
-			<div id="category-loop">
-		 		<%= sub.name %>	
-			</div>
-		 <% end %>
-		</div>
-		</div>	
-	</div>	
-</div>
-</div>
+
+
 <%= link_to 'Back', categories_path %>
+

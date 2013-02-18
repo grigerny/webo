@@ -2,7 +2,7 @@ class SubcategoriesController < ApplicationController
   # GET /subcategories
   # GET /subcategories.json
   def index
-    @subcategories = @category.subcategories.all
+    @subcategories = Subcategory.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -40,7 +40,9 @@ class SubcategoriesController < ApplicationController
   # POST /subcategories
   # POST /subcategories.json
   def create
-    @subcategory = Subcategory.new(params[:subcategory])
+      @category = Category.find(params[:category_id])
+      @subcategory = @category.subcategories.build(params[:subcategory])
+
 
     respond_to do |format|
       if @subcategory.save

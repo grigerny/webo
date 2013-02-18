@@ -26,7 +26,7 @@
 				<div class="category-loop-ajax">
 			 		<% @categories.sort { |a,b| a.name <=> b.name }.each do |cat| %>
 						<div id="category-loop">
-			 			<%= link_to category_path(cat), :id => "category-loop-link", :remote => true do %>
+			 			<%= link_to category_path(cat), :id => "category-loop-link" do %>
 							<%= cat.name.downcase %>
 							<% end %>
 						</div>

@@ -1,17 +1,7 @@
-<%= form_for Category.new do |f| %>
-  <% if Category.new.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@subcategory.errors.count, "error") %> prohibited this subcategory from being saved:</h2>
-
-      <ul>
-      <% @subcategory.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= form_for @category.subcategories.new do |f| %>
 
   <div class="actions">
-    <%= f.submit %>
+		<%= f.hidden_field :category_id, :value => 16 %>
+    	<%= f.text_field :name, :id => "add-a-category", :placeholder => "Add a subcategory" %>
   </div>
 <% end %>
