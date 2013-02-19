@@ -31,6 +31,7 @@ gem "less-rails"
 gem 'libv8', '~> 3.11.8'
 gem "ransack"
 gem 'devise'
+gem 'acts_as_votable', '~> 0.5.0'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
