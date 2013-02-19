@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_many :links, :dependent => :destroy
   has_many :categories
+  acts_as_voter
   
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
