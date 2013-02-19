@@ -53,10 +53,26 @@
 <div class="row-fluid">
 	<div class="span10 offset1">
 		<div id="linkwrapper">
-			<% @category.links.each do |link| %>
-			<%= gravatar_for link.user.email, :size => 48 if link.user %>
-			<%= link.name %>
-			<% end %>
+			
+			<% @category.links.each do |link| %>	
+				<div class="gravatar-wrapper">
+					<%= gravatar_for link.user.email, :size => 32 if link.user %>
+				</div>	
+					
+				<div class="link-wrapper">	
+					<%= link_to "http://#{link.name}", :class => "link-color" do  %>
+					<%= link.name %>
+				</div>	
+	
+					<div id="loop-bar">	
+								
+					<% end %>
+					
+					<br>
+					<br>	
+					</div>	
+									
+					<% end %>	
 		</div>
 	</div>
 </div>			

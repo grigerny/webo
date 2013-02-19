@@ -1,3 +1,36 @@
 // Place all the styles related to the links controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#linkwrapper{
+	padding-left:40px;
+}
+
+a.link-color{
+	margin-left:10px;
+	font-family: vera-sans, serif;
+	color:#124CF5;
+	background-color:white;
+}
+
+a.link-color:hover{
+	font-family: vera-sans, serif;
+	color:#124CF5;
+	background-color:white;
+}
+
+.gravatar-wrapper{
+	float:left;
+}
+
+.link-wrapper{
+	padding:5px;
+}
+
+#loop-bar{
+	width:95%;
+	height:50px;
+	margin-top:-20px;
+	margin-bottom:30px;
+	border-bottom:1px solid rgba(0, 200, 248, 0.200);
+}
