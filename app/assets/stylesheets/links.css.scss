@@ -2,6 +2,56 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+#add-link-form-wrapper{
+	float:left;
+	width:90%;	
+	margin-left:10px;
+}
+
+.add-link-form{
+	width:100%;
+	font-size:32px !important;
+	color:#c0c0c0 !important;
+	font-family: vera-sans, serif;
+	border:#00c8f8 solid 5px!important;
+	height:60px !important;
+	outline: none !important;
+	box-shadow:none !important;
+	outline: none !important;
+	background-color:white !important;
+	border-radius: 0px !important;
+ 
+  -webkit-animation: blink 2s linear;
+  -moz-animation: blink 2s linear;
+  -ms-animation: blink 2s linear;
+  -o-animation: blink 2s linear;
+}
+@-webkit-keyframes blink {
+  0%   {border: #fff solid 5px}
+  30% { border: #f620bc solid 5px}
+  60% { border: #27ffbf solid 5px}
+  100% { border: #00c8f8 solid 5px}
+}
+ 
+@-moz-keyframes blink {
+  0%   { background: #fff}
+  50% { background: #27ffbf}
+  100% { background: #00c8f8}
+}
+ 
+@-ms-keyframes blink {
+  0%   { background: #fff}
+  50% { background: #27ffbf}
+  100% { background: #00c8f8}
+}
+ 
+@-o-keyframes blink {
+  0%   { background: #fff}
+  50% { background: #27ffbf}
+  100% { background: #00c8f8}
+}
+
 #linkwrapper{
 	padding-left:40px;
 }
@@ -19,6 +69,12 @@ a.link-color:hover{
 	background-color:white;
 }
 
+a.link-color:visited{
+	font-family: vera-sans, serif;
+	color:#124CF5;
+	background-color:white;
+}
+
 .gravatar-wrapper{
 	float:left;
 }
@@ -30,7 +86,78 @@ a.link-color:hover{
 #loop-bar{
 	width:95%;
 	height:50px;
-	margin-top:-20px;
 	margin-bottom:30px;
 	border-bottom:1px solid rgba(0, 200, 248, 0.200);
+}
+
+#link-up-div{
+	float:right;
+}
+
+.arrow-wrapper{
+	float:right;
+	background-color:#00c8f8;
+	border-radius:5px;
+	
+}
+
+.icon-up-css{
+	font-size:16px;
+}
+
+.icon-down-css{
+	font-size:16px;
+	
+}
+
+a.icon-up-css{
+	font-family: vera-sans, serif;
+	background-color:white;
+	text-decoration:none;
+	color:black;
+}
+
+
+a.icon-up-css:hover{
+	font-family: vera-sans, serif;
+	color:#00bb76;
+	text-decoration:none;
+	background-color:white;
+}
+
+
+a.icon-down-css{
+	font-size:16px;
+	font-family: vera-sans, serif;
+	background-color:white;	
+	text-decoration:none;
+	color:#666;
+}
+
+
+a.icon-down-css:hover{
+	font-family: vera-sans, serif;
+	color:#f66779;
+	text-decoration:none;
+	background-color:white;
+}
+
+a.icon-down-css:hover{
+	font-family: vera-sans, serif;
+	color:#f66779;
+	text-decoration:none;
+	background-color:white;
+}
+#link-down-div{
+	float:right;
+}
+
+#link-plusminus{
+	float:left;
+	background:#c0c0c0;
+	font-family: vera-sans, serif;
+	font-size:18px;
+	padding:10px;
+	border-radius:3px;
+	color:white;
 }

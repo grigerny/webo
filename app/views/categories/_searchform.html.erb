@@ -1,3 +1,11 @@
 <%= search_form_for @q do |f| %>
+<% if @q.result.present? %>
+<div class="search-category-form">
+<i class="icon-search"></i>
 <%= f.text_field :name_cont, :id => "search-category" %>
+</div>
+<% else %>
+<%= "Sorry, topic not found but you should add one now." %>
+<%= render 'form' %>
+<% end %>
 <% end %>

@@ -5,6 +5,12 @@ Webo::Application.routes.draw do
       resources :links
   end    
 
+  resources :links do
+    member do
+      get :vote_up
+      get :vote_down
+    end
+  end
 
 
   # The priority is based upon order of creation:

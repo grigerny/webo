@@ -82,4 +82,23 @@ class LinksController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def vote_up
+      begin
+        current_user.vote_for(@link = Link.find(params[:id]))
+        redirect_to @link.category
+      rescue ActiveRecord::RecordInvalid
+        redirect_to @link.category
+      end
+    end
+    
+    def vote_down
+        begin
+          current_user.vote_against(@link = Link.find(params[:id]))
+          redirect_to @link.category
+        rescue ActiveRecord::RecordInvalid
+          redirect_to @link.category
+        end
+      end
+    
 end

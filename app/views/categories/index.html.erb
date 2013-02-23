@@ -6,7 +6,7 @@
 				<div id="user_pic">
 			<% if user_signed_in? %>
 			<%= link_to edit_user_registration_path do %>		
-			<%= gravatar_for "#{current_user.email}", :size => 80 %> 
+			<%= gravatar_for "#{current_user.email}", :size => 80, :class=> "gravatar-css" %> 
 			<% end %>
 			<% end %>
 				</div>
@@ -15,10 +15,7 @@
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="span10 offset1">
-				<i class="icon-search"></i>
-				<div class="search-category-form">
 				<%= render "searchform" %>
-				</div>
 			</div>
 		</div>
 	</div>

@@ -17,7 +17,21 @@
 	font-size:32px;
 	font-family: vera-sans, serif;
 	margin-bottom:60px;
+	width: 150px;
+	background: #c0c0c0;
 }
+
+#user_pic:hover{
+	margin-left:40px;
+	color:#c0c0c0;
+	font-size:32px;
+	font-family: vera-sans, serif;
+	margin-bottom:60px;
+	width: 150px;
+	background: #00c8f8;
+}
+
+
 
 #add-a-category{
 	width:100%;
@@ -65,18 +79,18 @@
 
 .search-category-form{
 	float:left;
-	width:90%;	
+	width:100%;	
 	margin-left:10px;
 }
 
 #search-category{
-	width:100%;
+	width:90%;
 	font-size:32px;
 	color:#C0C0C0 !important;
 	font-family: vera-sans, serif;
 	border:solid 5px #00C8F8;
 	height:60px;
-	margin-bottom:60px;
+	margin-left:10px;
 	outline: none !important;
 	box-shadow:none !important;
 	border-radius: 0px !important;
@@ -85,7 +99,6 @@
 
 .icon-search{
 	margin-top:15px;
-	float:left;
 	font-size:34px;
 }
 
@@ -96,12 +109,10 @@
 }
 
 .icon-plus{
-	margin-top:15px;
-	margin-left:30px;
+	margin-top:20px;
 	float:left;
 	font-size:34px;
 }
-
 .category-wrapper{
 	margin-left:35px;
 }
@@ -147,61 +158,14 @@ a#category-loop-link:visited{
 }
 
 #category-title{
+	height:50px;
+	margin-left:60px;
+	margin-right:60px;
 	background-color:#00C8F8;
 	color:white;
 	font-size:32px;
 	font-family: vera-sans, serif;
-	padding:20px;
-	float:left;
-	border-radius:5px;
-	margin-left:40px;
-	margin-bottom:10px;
+	border-radius:5px;	
 	cursor: pointer;
 }
 
-
-
-
-.add-link-form {
-		width:65%;
-		font-size:32px !important;
-		margin-left:20px;
-		margin-bottom:-40px !important;
-		color:white!important;
-		font-family: vera-sans, serif;
-		border:none !important;
-		height:50px !important;
-		outline: none !important;
-		box-shadow:none !important;
-		outline: none !important;
-		background-color:#00c8f8 !important;
- 
-  -webkit-animation: blink 2s linear;
-  -moz-animation: blink 2s linear;
-  -ms-animation: blink 2s linear;
-  -o-animation: blink 2s linear;
-}
-@-webkit-keyframes blink {
-  0%   { background: #fff}
-  30% { background: #f620bc}
-  60% { background: #27ffbf}
-  100% { background: #00c8f8}
-}
- 
-@-moz-keyframes blink {
-  0%   { background: #fff}
-  50% { background: #27ffbf}
-  100% { background: #00c8f8}
-}
- 
-@-ms-keyframes blink {
-  0%   { background: #fff}
-  50% { background: #27ffbf}
-  100% { background: #00c8f8}
-}
- 
-@-o-keyframes blink {
-  0%   { background: #fff}
-  50% { background: #27ffbf}
-  100% { background: #00c8f8}
-}
