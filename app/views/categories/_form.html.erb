@@ -11,7 +11,11 @@
     </div>
   <% end %>
 
-  <div class="actions">
-	<%= f.text_field :name, :id => "add-a-category", :placeholder => "Add a topic" %>
-  </div>
+ <div class="search-category-form">
+	<i class="icon-plus"></i>
+		<%= f.text_field :name, :id => "search-category", :value => "#{@q.name_cont}"  %>
+
+	
+ </div>
 <% end %>
+
