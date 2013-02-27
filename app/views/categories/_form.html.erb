@@ -11,11 +11,7 @@
     </div>
   <% end %>
 
- <div class="search-category-form">
 	<i class="icon-plus"></i>
-		<%= f.text_field :name, :id => "search-category", :value => "#{@q.name_cont}"  %>
-
-	
- </div>
-<% end %>
+	<%= f.text_field :name, :id => "add-category", :value => "#{@q.name_cont rescue nil}"  %>
+	<% end %>
 

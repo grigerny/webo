@@ -12,26 +12,28 @@
 }
 
 #user_pic{
-	margin-left:40px;
-	color:#c0c0c0;
-	font-size:32px;
+	float:left;
 	font-family: vera-sans, serif;
-	margin-bottom:60px;
-	width: 150px;
-	background: #c0c0c0;
 }
 
-#user_pic:hover{
-	margin-left:40px;
-	color:#c0c0c0;
-	font-size:32px;
-	font-family: vera-sans, serif;
-	margin-bottom:60px;
-	width: 150px;
-	background: #00c8f8;
+.user-pic-flash-wrapper{
+	margin-left:38px;
 }
 
+.flash-wrapper{
+	float:left;
+}
 
+#flash-add{
+	background-color:#c0c0c0;
+	height:40px;
+	width:auto;
+	line-height:40px;
+	padding:20px;
+	font-family: vera-sans, serif;
+	font-size:24px;
+	color:white;
+}
 
 #add-a-category{
 	width:100%;
@@ -77,13 +79,23 @@
 	padding-top:8px;
 }
 
-.search-category-form{
-	float:left;
-	width:100%;	
-	margin-left:10px;
-}
 
 #search-category{
+	float:left;
+	width:75%;
+	font-size:32px;
+	color:#C0C0C0 !important;
+	font-family: vera-sans, serif;
+	border:solid 5px #00C8F8;
+	height:60px;
+	margin-left:5px;
+	outline: none !important;
+	box-shadow:none !important;
+	border-radius: 0px !important;
+	outline: none !important;
+}
+
+#add-category{
 	float:left;
 	width:75%;
 	font-size:32px;
@@ -100,12 +112,6 @@
 
 .icon-search{
 	margin-top:20px;
-	float:left;
-	font-size:34px;
-}
-
-.icon-pencil{
-	margin-top:15px;
 	float:left;
 	font-size:34px;
 }

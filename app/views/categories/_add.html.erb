@@ -1,0 +1,34 @@
+<div class="row-fluid">
+	<div class="span12">
+		<div class="span10 offset1">
+			<div class="span12">
+				<div class="user-pic-flash-wrapper">
+					<div id="user_pic">
+						<% if user_signed_in? %>
+							<%= link_to edit_user_registration_path do %>		
+								<%= gravatar_for "#{current_user.email}", :size => 80, :class=> "gravatar-css" %> 
+								<% end %>
+								<% end %>
+					</div>
+				
+						<div class="flash-wrapper">	
+							<div id="flash-add">
+								:'( That topic was not found, add it here.. 	
+							</div>
+						</div>
+				</div>
+				
+			</div>	
+		</div>
+
+<div class="row-fluid">
+	<div class="span12">
+		<div class="span10 offset1">
+			<%= render "form" %>
+		</div>
+	</div>
+</div>
+
+			</div>
+		</div>
+	</div>

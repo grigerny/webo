@@ -4,9 +4,10 @@ class CategoriesController < ApplicationController
   def index
     @q = Category.search(params[:q])
     @categories = @q.result(:distinct => true)
+    
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html 
       format.json { render json: @categories }
     end
   end
@@ -51,7 +52,7 @@ class CategoriesController < ApplicationController
         format.html { redirect_to root_url, notice: 'Category was successfully created.' }
         format.json { render json: @category, status: :created, location: @category }
       else
-        format.html { render action: "new" }
+        format.html { redirect_to root_url }
         format.json { render json: @category.errors, status: :unprocessable_entity }
       end
     end
